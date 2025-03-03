@@ -3,34 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
-
     <title>cawfee</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script2.js" defer></script>
   </head>
   <body>
 
     <!-- INPUT FIELD FOR 1 CHARACTER -->
     <input type="text" id="charInput" maxlength="1" />
 
-
+     <!-- Slider to change image size -->
+     <div class="slider-container">
+        <label for="imageSizeSlider"></label>
+        <input type="range" id="imageSizeSlider" min="100" max="500" value="200">
+    </div>
+    
     <!-- BUTTON TO DISPLAY IMAGE -->
-
     <img src="./imgs/essenza.png" id="submitButton" alt="Submit" onclick="displayImage()" />
-
-
+    
     <div id="imageContainer">
-        <img id="displayedImage" src="imgs/" alt="Displayed Image">
-      </div>
-      
+        <!-- Image will be displayed after input -->
+        <img id="displayedImage" src="imgs/essenza.png" alt="Displayed Image" style="display: none;">
+    </div>
 
+   
   
-
-      
   </body>
 </html>
-

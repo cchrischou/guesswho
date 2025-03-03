@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(255, 210, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-left: 2em;
+}
+
+/* STYLE FOR THE INPUT FIELD */
+#charInput {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    padding: 10px;
+    width: 7em;
+    height: auto;
+    color: rgb(0, 0, 0);
+    border-radius: 2em;
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+/* STYLE FOR THE INPUT-CONTAINER */
+.input-container {
+    display: flex;
+    flex-direction: column; /* Aligns input and slide container vertically */
+    justify-content: center; /* Centers everything inside the container */
+    align-items: center;    /* Ensures that both input and slide are centered horizontally */
+    padding: 20px;
+}
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#submitButton {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+/* STYLE FOR THE CONTAINER */
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* Initially hidden */
+    width: 200px; /* Default width */
+    animation: bounce 1s infinite;
+    position: absolute;
+    left: 35em;
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+/* STYLE FOR THE SLIDER CONTAINER */
+.slider-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imageSizeSlider {
+    width: 150px;
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none;
+    background: #532802; /* Light background for the slider track */
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+
+}
+
+/* STYLE FOR THE SLIDER THUMB (the dot) */
+#imageSizeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none;
+    width: 50px; /* Set the size of the thumb */
+    height: 50px; /* Set the size of the thumb */
+    border-radius: 50%; /* Make it round */
+    background-image: url('./imgs/coffee.webp'); /* Add your image URL */
+    background-size: cover; /* Ensure the image covers the thumb area */
+    cursor: pointer; /* Change the cursor when hovering over the thumb */
+}
+
+#imageSizeSlider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('./imgs/coffee.webp'); /* Add your image URL */
+    background-size: cover;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
