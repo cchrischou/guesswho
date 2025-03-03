@@ -26,9 +26,9 @@ body {
 /* STYLE FOR THE INPUT-CONTAINER */
 .input-container {
     display: flex;
-    flex-direction: column; /* Aligns input and slide container vertically */
-    justify-content: center; /* Centers everything inside the container */
-    align-items: center;    /* Ensures that both input and slide are centered horizontally */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
     padding: 20px;
 }
 
@@ -55,8 +55,8 @@ body {
 
 /* STYLE FOR THE IMAGE */
 #displayedImage {
-    display: none; /* Initially hidden */
-    width: 200px; /* Default width */
+    display: none; 
+    width: 200px; 
     animation: bounce 1s infinite;
     position: absolute;
     left: 35em;
@@ -73,9 +73,9 @@ body {
 
 #imageSizeSlider {
     width: 150px;
-    -webkit-appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; 
     appearance: none;
-    background: #532802; /* Light background for the slider track */
+    background: #532802; 
     height: 8px;
     border-radius: 5px;
     outline: none;
@@ -83,23 +83,23 @@ body {
 
 }
 
-/* STYLE FOR THE SLIDER THUMB (the dot) */
+/* STYLE FOR THE SLIDER THUMB  */
 #imageSizeSlider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove default appearance */
+    -webkit-appearance: none;
     appearance: none;
-    width: 50px; /* Set the size of the thumb */
-    height: 50px; /* Set the size of the thumb */
-    border-radius: 50%; /* Make it round */
-    background-image: url('./imgs/coffee.webp'); /* Add your image URL */
-    background-size: cover; /* Ensure the image covers the thumb area */
-    cursor: pointer; /* Change the cursor when hovering over the thumb */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-image: url('./imgs/coffee.webp'); 
+    background-size: cover; 
+    cursor: pointer; 
 }
 
 #imageSizeSlider::-moz-range-thumb {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url('./imgs/coffee.webp'); /* Add your image URL */
+    background-image: url('./imgs/coffee.webp'); 
     background-size: cover;
     cursor: pointer;
 }
